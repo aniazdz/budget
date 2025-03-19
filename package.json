@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
-    "check": "biome check --write",
     "dev": "rspeedy dev",
-    "format": "biome format --write",
+    "check": "biome check",
+    "format": "biome check --write && bun run check",
+    "format-unsafe": "biome check --write --unsafe && bun run check",
     "preview": "rspeedy preview",
     "prepare": "husky"
   },
@@ -34,6 +35,6 @@
   },
   "private": true,
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [ "biome check" ]
+    "*.{js,jsx,ts,tsx}": ["biome check"]
   }
 }
