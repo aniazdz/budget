@@ -7,7 +7,8 @@
     "check": "biome check --write",
     "dev": "rspeedy dev",
     "format": "biome format --write",
-    "preview": "rspeedy preview"
+    "preview": "rspeedy preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@lynx-js/react": "^0.105.2"
@@ -21,6 +22,8 @@
     "@lynx-js/types": "^3.2.0",
     "@types/react": "^18.3.18",
     "autoprefixer": "^10.4.21",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "postcss": "^8.5.3",
     "postcss-loader": "^8.1.1",
     "tailwindcss": "3",
@@ -29,5 +32,8 @@
   "engines": {
     "node": ">=18"
   },
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [ "biome check" ]
+  }
 }

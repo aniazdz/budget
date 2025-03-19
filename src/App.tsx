@@ -29,7 +29,9 @@ export function App() {
               <image src={lynxLogo} className="Logo--lynx" />
             )}
           </view>
-          <text className="font-semibold text-5xl text-palette-accent">bruh</text>
+          <text className="font-semibold text-5xl text-palette-accent">
+            bruh
+          </text>
           <text className="Subtitle">on Lynx</text>
         </view>
         <view className="Content">
