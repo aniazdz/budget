@@ -1,18 +1,13 @@
-import { useState } from '@lynx-js/react'
+import { BudText } from '@components'
 
 export function Home() {
-  const [hello, setHello] = useState(true)
-
   return (
-    <view
-      className="flex h-screen w-screen items-center justify-center bg-palette-background"
-      bindtap={() => {
-        'background only'
-        setHello(!hello)
-      }}
-    >
+    <view className="flex h-screen w-screen items-center justify-center bg-palette-background">
       <view className="flex flex-col items-center justify-center">
-        <text className="text-palette-text">{hello ? 'Hello' : 'Bye'}</text>
+        <BudText>primary</BudText>
+        <BudText style="secondary">secondary</BudText>
+        <BudText style="accent">accent</BudText>
+        <BudText style="error">error</BudText>
       </view>
     </view>
   )
