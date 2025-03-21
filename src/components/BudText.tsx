@@ -6,5 +6,11 @@ interface Props {
 }
 
 export function BudText({ children, style = 'primary' }: Props) {
-  return <text className={`text-palette-text-${style}`}>{children}</text>
+  const variant = {
+    primary: 'text-palette-text-primary',
+    secondary: 'text-palette-text-secondary',
+    accent: 'text-palette-text-accent',
+    error: 'text-palette-text-error',
+  }
+  return <text className={variant[style]}>{children}</text>
 }
