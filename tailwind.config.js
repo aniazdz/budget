@@ -3,6 +3,7 @@ import lynxPreset from '@lynx-js/tailwind-preset'
 /** @type {import('tailwindcss').Config} */
 export default {
   presets: [lynxPreset],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
