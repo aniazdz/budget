@@ -5,7 +5,7 @@ interface Props {
   style?: 'primary' | 'secondary' | 'accent' | 'error'
 }
 
-export function BudText({ children, style = 'primary' }: Props) {
+function BudText({ children, style = 'primary' }: Props) {
   const variant = {
     primary: 'text-palette-text-primary',
     secondary: 'text-palette-text-secondary',
@@ -14,3 +14,5 @@ export function BudText({ children, style = 'primary' }: Props) {
   }
   return <text className={variant[style]}>{children}</text>
 }
+
+export default BudText
