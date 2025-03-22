@@ -14,9 +14,11 @@ function BudNavbar({ navbarItems }: Props) {
           {navbarItems[currentPage].page}
         </view>
         <view className="flex justify-evenly bg-palette-olivine p-2">
-          {navbarItems.map((item) => (
+          {navbarItems.map((item, idx) => (
             <view key={item.title}>
-              <BudText>{item.title}</BudText>
+              <BudText>
+                {idx}: {item.title}
+              </BudText>
             </view>
           ))}
         </view>
