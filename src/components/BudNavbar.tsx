@@ -15,7 +15,7 @@ function BudNavbar({ navbarItems }: Props) {
         </view>
         <view className="flex justify-evenly bg-palette-olivine p-2">
           {navbarItems.map((item, idx) => (
-            <view key={item.title}>
+            <view key={item.title} className="bg-palette-flame">
               <BudText>
                 {idx}: {item.title}
               </BudText>
