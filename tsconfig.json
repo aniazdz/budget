@@ -13,7 +13,9 @@
     "skipLibCheck": true,
     "baseUrl": "./src",
     "paths": {
-      "@components": ["./components/index.jsx"]
+      "@assets": ["./assets"],
+      "@components": ["./components/index.jsx"],
+      "@icons": ["./icons/index.jsx"]
     }
   },
   "exclude": ["dist/"]

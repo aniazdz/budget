@@ -6,8 +6,8 @@
     "build": "rspeedy build",
     "dev": "rspeedy dev",
     "check": "biome check",
-    "format": "biome check --write && bun run check",
-    "format-unsafe": "biome check --write --unsafe && bun run check",
+    "format": "biome check --write",
+    "format-unsafe": "biome check --write --unsafe",
     "preview": "rspeedy preview",
     "prepare": "husky"
   },
@@ -35,6 +35,6 @@
   },
   "private": true,
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["biome check"]
+    "*.{js,jsx,ts,tsx}": ["bun run check"]
   }
 }
