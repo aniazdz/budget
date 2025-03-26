@@ -13,30 +13,42 @@ text {
 
 @font-face {
   font-family: "PhosphorFill";
-  src: local("PhosphorFill"), url(./assets/phosphor-icons/Fonts/fill/Phosphor-Fill.woff) format("woff");
+  src: local("PhosphorFill"),
+    url(./assets/phosphor-icons/Fonts/fill/Phosphor-Fill.woff) format("woff");
 }
 
 @font-face {
   font-family: "PhosphorThin";
-  src: local("PhosphorThin"), url(./assets/phosphor-icons/Fonts/thin/Phosphor-Thin.woff) format("woff");
+  src: local("PhosphorThin"),
+    url(./assets/phosphor-icons/Fonts/thin/Phosphor-Thin.woff) format("woff");
 }
 
 @font-face {
   font-family: "PhosphorLight";
-  src: local("PhosphorLight"), url(./assets/phosphor-icons/Fonts/light/Phosphor-Light.woff) format("woff");
+  src: local("PhosphorLight"),
+    url(./assets/phosphor-icons/Fonts/light/Phosphor-Light.woff) format("woff");
 }
 
 @font-face {
   font-family: "Phosphor";
-  src: local("Phosphor"), url(./assets/phosphor-icons/Fonts/regular/Phosphor.woff) format("woff");
+  src: local("Phosphor"),
+    url(./assets/phosphor-icons/Fonts/regular/Phosphor.woff) format("woff");
 }
 
 @font-face {
   font-family: "PhosphorBold";
-  src: local("PhosphorBold"), url(./assets/phosphor-icons/Fonts/bold/Phosphor-Bold.woff) format("woff");
+  src: local("PhosphorBold"),
+    url(./assets/phosphor-icons/Fonts/bold/Phosphor-Bold.woff) format("woff");
 }
 
 @font-face {
   font-family: "PhosphorDuotone";
-  src: local("PhosphorDuotone"), url(./assets/phosphor-icons/Fonts/duotone/Phosphor-Duotone.woff) format("woff");
+  src: local("PhosphorDuotone"),
+    url(./assets/phosphor-icons/Fonts/duotone/Phosphor-Duotone.woff)
+    format("woff");
+}
+
+.safe-area-view {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
