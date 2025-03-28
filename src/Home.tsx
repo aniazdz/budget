@@ -11,27 +11,41 @@ export function Home() {
         list-type="single"
         span-count={1}
         scroll-orientation="vertical"
-        className="jusitfy-evenly h-screen w-full space-y-2 bg-pink-200 p-4"
+        scroll-bar-enable={true}
+        enable-scroll={true}
+        className="h-full w-full"
       >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((num) => (
           <list-item
             item-key={`list-item-${num}`}
             key={`list-item-${num}`}
-            className="flex h-12 w-full items-center justify-center rounded-lg border border-gray-300 bg-white font-semibold text-lg shadow-md"
+            className="flex h-1/6 w-full items-center justify-center bg-palette-background"
           >
-            {num}
+            <view className="flex h-full w-full flex-row justify-evenly gap-7 rounded-lg border border-gray-300 bg-color-white shadow-md">
+              {' '}
+              {/* budget item display */}
+              <view>
+                <text className="font-semibold text-3xl text-palette-text-primary">
+                  {num}
+                </text>
+              </view>
+              <view>
+                <text className="text-2xl text-palette-text-primary">
+                  {' '}
+                  Transaction Name{' '}
+                </text>
+                <text className="text-2xl text-palette-text-primary">
+                  {' '}
+                  $$${' '}
+                </text>
+                <text className="text-2xl text-palette-text-primary">
+                  {' '}
+                  Thur. Mar 27, 2025{' '}
+                </text>
+              </view>
+            </view>
           </list-item>
         ))}
-        {/* {Array.from({ length: 50 }).map((_, index) => {
-        return (
-          <list-item style={{
-            backgroundColor: "purple"
-          }}
-            item-key={`list-item-${index}`}
-            key={`list-item-${index}`}
-          > {index + 1} </list-item>
-        );
-      })} */}
       </list>
     </view>
   )
